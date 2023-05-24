@@ -8,7 +8,7 @@ import { FC } from "react"
 
 const Cards: FC<{ villaDetail: oneVillaHouse }> = ({ villaDetail }) => {
     return (
-        <div className="relative flex flex-col flex-shrink-0 shadow-md bg-secondaryWhite rounded-lg space-y-4 w-[22rem] pb-4">
+        <div className="relative flex flex-col flex-shrink-0 shadow-md bg-secondaryWhite rounded-lg space-y-4 w-[20rem] md:w-[22rem] pb-4">
             <Image className="h-[12rem] object-cover rounded-t-lg flex-shrink-0 w-full" width={3000} height={3000} src={villaDetail.imageUrl} alt={villaDetail.subDescription} />
             <div className="absolute inset-0 bg-white opacity-0 z-10" />
             <div className="px-3 text-primaryLight">

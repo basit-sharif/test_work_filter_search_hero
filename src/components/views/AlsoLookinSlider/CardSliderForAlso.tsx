@@ -1,7 +1,7 @@
 "use client"
 import { oneVillaHouse } from "@/components/utils/Types";
-import Cards from "./Cards";
 import { FC } from "react";
+import Cards from "../Search/subComponents/Cards";
 
 const CardSlider: FC<{ villaHouseDataArray: Array<oneVillaHouse> }> = ({ villaHouseDataArray }) => {
     let initialX: number;
@@ -11,7 +11,7 @@ const CardSlider: FC<{ villaHouseDataArray: Array<oneVillaHouse> }> = ({ villaHo
     const isBrowser = () => typeof window !== "undefined";
 
     if (isBrowser()) {
-        tabBox = document.querySelector(".scrollGrabT");
+        tabBox = document.querySelector(".scrollGrab");
     }
 
     // Desktop functions
@@ -22,6 +22,7 @@ const CardSlider: FC<{ villaHouseDataArray: Array<oneVillaHouse> }> = ({ villaHo
         }
     };
     function mouseDown() {
+        console.log("moving orignal")
         isDragging = true;
     }
     function mouseUp() {
@@ -40,8 +41,7 @@ const CardSlider: FC<{ villaHouseDataArray: Array<oneVillaHouse> }> = ({ villaHo
     function mouseDownForMobile(e: any) {
         isDragging = true;
         initialX = e.touches[0].clientX;
-    }
-
+    };
 
 
     return (
@@ -49,7 +49,7 @@ const CardSlider: FC<{ villaHouseDataArray: Array<oneVillaHouse> }> = ({ villaHo
             onMouseMove={mouseMoves}
             onMouseDown={mouseDown}
             onMouseUp={mouseUp}
-            className="select-none flex gap-4 overflow-x-hidden scrollGrabT"
+            className="select-none flex gap-4 overflow-x-hidden scrollGrab"
             onTouchMove={mouseMovesForMobile}
             onTouchStart={mouseDownForMobile}
             onTouchEnd={mouseUp}
