@@ -20,9 +20,9 @@ const Search: FC<{ villaHouseDataArray: ProductType }> = ({ villaHouseDataArray 
         setFilterOpen(!isFilterOpen)
     }
 
-    // filter by using filter on array
+    // filter by using search value on array
     function performFiltrationProcess() {
-        let filteredBySearchWordsArray: Array<oneVillaHouse> = villaHouseDataArray.products.filter((item: oneVillaHouse) =>
+        let filteredBySearchWordsArray: Array<oneVillaHouse> = villaHouseDataArray?.products.filter((item: oneVillaHouse) =>
             (item.vilaName).indexOf(searchValue.toLowerCase()) !== -1 || (item.description).indexOf(searchValue.toLowerCase()) !== -1)
         setOrignalDataToItrate(filteredBySearchWordsArray);
     };
@@ -47,9 +47,13 @@ const Search: FC<{ villaHouseDataArray: ProductType }> = ({ villaHouseDataArray 
         setLoading(false);
     };
 
+    // made filter on bedroom value change
     function setValueAndApplyFilterForBedRoom() {
         setLoading(true);
-        let filteredBySearchWordsArray: Array<oneVillaHouse> = orignalDataToItrate.filter((item: oneVillaHouse) => Number(item.debroom) <= Number(bedRoomValue))
+        if (bedRoomValue === "0" || bedRoomValue === "32") {
+            setOrignalDataToItrate(villaHouseDataArray?.products);
+        };
+        let filteredBySearchWordsArray: Array<oneVillaHouse> = villaHouseDataArray?.products.filter((item: oneVillaHouse) => Number(item.debroom) <= Number(bedRoomValue));
         setOrignalDataToItrate(filteredBySearchWordsArray);
         setLoading(false);
     }
@@ -57,16 +61,17 @@ const Search: FC<{ villaHouseDataArray: ProductType }> = ({ villaHouseDataArray 
     useEffect(() => {
         setValueAndApplyFilter();
     }, [searchValue]);
-    
+
     useEffect(() => {
         setValueAndApplyFilterForBedRoom();
     }, [bedRoomValue])
 
-
+    // loading
     if (!orignalDataToItrate) {
         return <LoadingState />
     }
 
+    // rendering data
     return (
         <div className='md:pl-14 2xl:pl-0 bg-white'>
             <div className='max-w-7xl mx-auto py-10 space-y-6'>
