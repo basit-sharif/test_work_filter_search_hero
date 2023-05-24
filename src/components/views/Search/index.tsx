@@ -49,7 +49,7 @@ const Search: FC<{ villaHouseDataArray: ProductType }> = ({ villaHouseDataArray 
 
     function setValueAndApplyFilterForBedRoom() {
         setLoading(true);
-        let filteredBySearchWordsArray: Array<oneVillaHouse> = villaHouseDataArray.products.filter((item: oneVillaHouse) => Number(item.debroom) <= Number(bedRoomValue))
+        let filteredBySearchWordsArray: Array<oneVillaHouse> = orignalDataToItrate.filter((item: oneVillaHouse) => Number(item.debroom) <= Number(bedRoomValue))
         setOrignalDataToItrate(filteredBySearchWordsArray);
         setLoading(false);
     }
