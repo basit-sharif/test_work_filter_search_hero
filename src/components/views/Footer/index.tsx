@@ -10,7 +10,7 @@ const Footer = () => {
                         <input className="mt-2 searchInputField" id="destination" type="text" placeholder="Search destination" />
                     </div>
                     <div>
-                        <label htmlFor="data">where do you want to go</label>
+                        <label htmlFor="data">where do you want to go a</label>
                         <input className="mt-2 searchInputField" id="data" type="date" placeholder="Set data" />
                     </div>
                     <div>

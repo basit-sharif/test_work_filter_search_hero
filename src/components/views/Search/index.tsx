@@ -106,7 +106,7 @@ const Search: FC<{ villaHouseDataArray: ProductType }> = ({ villaHouseDataArray 
                         </div>
                     </button>
                 </div>
-                <h2 className="mt-2 text-PrimaryBlack opacity-90">Top Picks For You - Amsterdam</h2>
+                <h2 className="mt-2 text-PrimaryBlack opacity-90">Top Picks For You - Amsterdamab</h2>
                 {isLoading ? <LoadingState /> : <CardSlider villaHouseDataArray={orignalDataToItrate} />}
             </div>
         </div>
