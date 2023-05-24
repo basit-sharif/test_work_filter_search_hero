@@ -49,8 +49,8 @@ export default class MultipleItems extends Component<propsType> {
       <div className="overflow-hidden">
         <Slider {...settings} >
           {(this.props.villaHouseDataArray)?.map((item: oneVillaHouse, index: number) => (
-            <div className="mr-4">
-              <Cards key={index + 66} villaDetail={item} />
+            <div key={index + 66} className="mr-4">
+              <Cards villaDetail={item} />
             </div>
           ))}
         </Slider>
