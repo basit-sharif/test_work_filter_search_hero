@@ -18,7 +18,6 @@ async function fetchVillaHouseData() {
 
 export default async function Home() {
   const villaHouseDataArray = await fetchVillaHouseData();
-  console.log("housedata1 : ", villaHouseDataArray)
   return (
     <Search villaHouseDataArray={villaHouseDataArray} />
   )
