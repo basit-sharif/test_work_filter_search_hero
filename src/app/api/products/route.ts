@@ -6,8 +6,8 @@ export async function GET(req: NextRequest) {
     if (url.searchParams.has("filename")) {
 
         try {
-            // ${url.searchParams.get("filename")}
-            let products = await fs.promises.readFile(`./public/ProductData/products.json`, "utf-8");
+
+            let products = await fs.promises.readFile(`./src/app/ProductData/${url.searchParams.get("filename")}`, "utf-8");
             products = JSON.parse(products);
             return NextResponse.json({ products })
 
