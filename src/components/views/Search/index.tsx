@@ -45,7 +45,9 @@ const Search: FC<{ villaHouseDataArray: ProductType }> = ({ villaHouseDataArray 
     useEffect(() => {
         setValueAndApplyFilter();
     }, [searchValue])
-
+    if (!orignalDataToItrate) {
+        return <LoadingState />
+    }
     return (
         <div className='px-6 md:px-14 bg-white'>
             <div className='max-w-7xl mx-auto py-10 space-y-6'>
