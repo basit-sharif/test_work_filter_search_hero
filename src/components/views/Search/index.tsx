@@ -10,6 +10,7 @@ import LoadingState from "@/components/shared/LoadingState"
 
 
 const Search: FC<{ villaHouseDataArray: ProductType }> = ({ villaHouseDataArray }) => {
+    console.log("housedata : ", villaHouseDataArray)
     const [isLoading, setLoading] = useState<boolean>(false);
     const [searchValue, setSearchValue] = useState<string>("");
     const [orignalDataToItrate, setOrignalDataToItrate] = useState(villaHouseDataArray?.products)
@@ -18,7 +19,6 @@ const Search: FC<{ villaHouseDataArray: ProductType }> = ({ villaHouseDataArray 
     function performFiltrationProcess() {
         let filteredBySearchWordsArray: Array<oneVillaHouse> = villaHouseDataArray.products.filter((item: oneVillaHouse) =>
             (item.description).indexOf(searchValue.toLowerCase()) !== -1 || (item.vilaName).indexOf(searchValue.toLowerCase()) !== -1)
-        console.log("filter :", searchValue, filteredBySearchWordsArray)
         setOrignalDataToItrate(filteredBySearchWordsArray);
     };
 
