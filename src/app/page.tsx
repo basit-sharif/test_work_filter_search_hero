@@ -1,5 +1,7 @@
 import Wrapper from "@/components/shared/Wrapper";
 import basePath from "@/components/shared/basepath";
+import AlsoLookingSlider from "@/components/views/AlsoLookinSlider";
+import Footer from "@/components/views/Footer";
 import Search from "@/components/views/Search";
 
 async function fetchVillaHouseData() {
@@ -19,6 +21,10 @@ async function fetchVillaHouseData() {
 export default async function Home() {
   const villaHouseDataArray = await fetchVillaHouseData();
   return (
-    <Search villaHouseDataArray={villaHouseDataArray} />
+    <div className="pb-8 px-3 md:px-0">
+      <Search villaHouseDataArray={villaHouseDataArray} />
+      <AlsoLookingSlider villaHouseDataArray={villaHouseDataArray} />
+      <Footer />
+    </div>
   )
 }

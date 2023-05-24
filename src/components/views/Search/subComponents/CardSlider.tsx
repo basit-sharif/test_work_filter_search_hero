@@ -1,3 +1,4 @@
+"use client"
 import { oneVillaHouse } from "@/components/utils/Types";
 import Cards from "./Cards";
 import { FC } from "react";

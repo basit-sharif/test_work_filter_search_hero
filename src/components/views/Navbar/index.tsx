@@ -6,9 +6,8 @@ import Link from "next/link"
 
 const Navbar = () => {
     return (
-        <div className="bg-primaryLight sticky z-30 top-0 px-6 md:px-14 py-3 md:py-4">
+        <div className="bg-primaryLight sticky z-30 top-0 px-3 md:px-14 2xl:px-0 py-3 md:py-4">
             <div className="max-w-7xl mx-auto text-white font-light flex justify-between items-center">
-
 
                 <div className="flex gap-12 items-center">
                     <Logo />

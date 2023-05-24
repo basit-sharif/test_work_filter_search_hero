@@ -12,7 +12,7 @@
         "imageUrl": "https://wallpaperaccess.com/full/4401180.jpg",
         "subDescription": "Serenity Haven",
         "vilaName": "Serenity Haven",
-        "description": "Cozy and charming, this house is perfect for those seeking a peaceful retreat with its picturesque surroundings and inviting ambiance.",
+        "description": "This house is perfect for those seeking a peaceful retreat with its picturesque surroundings.",
         "debroom": 4,
         "workStation": 3,
         "bathroom": 5
@@ -21,7 +21,7 @@
         "imageUrl": "https://wallpaperaccess.com/full/4401289.jpg",
         "subDescription": "Willow Cottage",
         "vilaName": "Willow Cottage",
-        "description": "Modern and stylish, this house showcases sleek design elements, spacious rooms, and state-of-the-art amenities, offering a luxurious living experience.",
+        "description": "Modern and stylish, this house showcases sleek design elements, spacious rooms.",
         "debroom": 6,
         "workStation": 3,
         "bathroom": 8
@@ -30,7 +30,7 @@
         "imageUrl": "https://wallpaperaccess.com/full/4401183.jpg",
         "subDescription": "Whispering Pines",
         "vilaName": "Whispering Pines",
-        "description": "Nestled amidst nature's beauty, this house boasts breathtaking views, lush gardens, and an outdoor living space that effortlessly blends with the serene environment.",
+        "description": "Nestled amidst nature's beauty, this house boasts breathtaking views, lush gardens.",
         "debroom": 4,
         "workStation": 12,
         "bathroom": 5
@@ -39,7 +39,7 @@
         "imageUrl": "https://wallpaperaccess.com/full/4401185.jpg",
         "subDescription": "Harmony Villa",
         "vilaName": "Harmony Villa",
-        "description": "Quaint and historic, this house exudes timeless elegance, featuring architectural details and character that will transport you to a bygone era.",
+        "description": "Quaint and historic, this house exudes timeless elegance, featuring architectural.",
         "debroom": 12,
         "workStation": 8,
         "bathroom": 15
@@ -48,7 +48,7 @@
         "imageUrl": "https://wallpaperaccess.com/full/4401186.jpg",
         "subDescription": "Tranquil Meadows",
         "vilaName": "Tranquil Meadows",
-        "description": "Contemporary and minimalist, this house embraces simplicity, emphasizing clean lines, open spaces, and a harmonious blend of natural and modern materials.",
+        "description": "Contemporary and minimalist, this house embraces simplicity, emphasizing clean lines.",
         "debroom": 16,
         "workStation": 12,
         "bathroom": 20
@@ -57,7 +57,7 @@
         "imageUrl": "https://wallpaperaccess.com/full/4401189.jpg",
         "subDescription": "Enchanted Retreat",
         "vilaName": "Enchanted Retreat",
-        "description": "Surrounded by tranquility, this house is an oasis of calmness, providing a private sanctuary where you can unwind and recharge amidst serene surroundings.",
+        "description": "Surrounded by tranquility, this house is an oasis of calmness, providing a private sanctuary.",
         "debroom": 22,
         "workStation": 12,
         "bathroom": 12
@@ -66,7 +66,7 @@
         "imageUrl": "https://wallpaperaccess.com/full/4401192.jpg",
         "subDescription": "Denver, Colorado",
         "vilaName": "Solitude Manor",
-        "description": "Vibrant and full of energy, this house is perfect for those who appreciate a lively atmosphere, with its vibrant colors, eclectic decor, and spacious entertainment areas.",
+        "description": "Vibrant and full of energy, this house is perfect for those who appreciate a lively atmosphere.",
         "debroom": 23,
         "workStation": 32,
         "bathroom": 13
@@ -75,7 +75,7 @@
         "imageUrl": "https://wallpaperaccess.com/full/4401194.jpg",
         "subDescription": "Denver, Colorado",
         "vilaName": "Blissful Abode",
-        "description": "Rustic and charming, this house offers a warm and inviting ambiance, combining natural elements, cozy interiors, and a welcoming fireplace for those cozy evenings.",
+        "description": "Rustic and charming, this house offers a warm and inviting ambiance, cozy interiors.",
         "debroom": 52,
         "workStation": 12,
         "bathroom": 31
@@ -84,7 +84,7 @@
         "imageUrl": "https://wallpaperaccess.com/full/4401200.jpg",
         "subDescription": "Denver, Colorado",
         "vilaName": "Radiant Haven",
-        "description": "Bright and airy, this house embraces natural light and open spaces, creating a refreshing environment that promotes a sense of well-being and relaxation.",
+        "description": "Bright and airy, this house embraces natural light and open spaces, refreshing environment.",
         "debroom": 32,
         "workStation": 22,
         "bathroom": 11
@@ -93,7 +93,7 @@
         "imageUrl": "https://wallpaperaccess.com/full/3946983.jpg",
         "subDescription": "Denver, Colorado",
         "vilaName": "Dreamcatcher Lodge",
-        "description": "Secluded and private, this house is nestled in a secluded location, providing ultimate privacy and tranquility, with its hidden gardens and secluded outdoor spaces.",
+        "description": "Secluded and private, this house is nestled in a secluded location, providing ultimate privacy.",
         "debroom": 23,
         "workStation": 12,
         "bathroom": 13
@@ -102,7 +102,7 @@
         "imageUrl": "https://wallpaperaccess.com/full/2527120.jpg",
         "subDescription": "Denver, Colorado",
         "vilaName": "Elysian Sanctuary",
-        "description": "Sophisticated and elegant, this house exudes refined luxury, with its high-end finishes, grand entryways, and meticulously designed interiors that are sure to impress.",
+        "description": "Sophisticated and elegant, this house exudes refined luxury, with its high-end finishes.",
         "debroom": 5,
         "workStation": 2,
         "bathroom": 3
