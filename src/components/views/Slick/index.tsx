@@ -13,10 +13,11 @@ interface propsType {
 export default class MultipleItems extends Component<propsType> {
   render() {
     const settings = {
-      infinite: true,
-      speed: 500,
+      className: "slider variable-width ",
+      centerMode: true,
       slidesToShow: 3,
       slidesToScroll: 3,
+      variableWidth: true,
       responsive: [
         {
           breakpoint: 1124,
@@ -48,7 +49,9 @@ export default class MultipleItems extends Component<propsType> {
       <div className="overflow-hidden">
         <Slider {...settings} >
           {(this.props.villaHouseDataArray)?.map((item: oneVillaHouse, index: number) => (
-            <Cards key={index + 66} villaDetail={item} />
+            <div className="mr-4">
+              <Cards key={index + 66} villaDetail={item} />
+            </div>
           ))}
         </Slider>
       </div>
