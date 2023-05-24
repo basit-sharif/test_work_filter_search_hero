@@ -56,8 +56,12 @@ const Search: FC<{ villaHouseDataArray: ProductType }> = ({ villaHouseDataArray 
 
     useEffect(() => {
         setValueAndApplyFilter();
+    }, [searchValue]);
+    
+    useEffect(() => {
         setValueAndApplyFilterForBedRoom();
-    }, [searchValue, bedRoomValue]);
+    }, [bedRoomValue])
+
 
     if (!orignalDataToItrate) {
         return <LoadingState />
