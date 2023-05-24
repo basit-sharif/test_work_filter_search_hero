@@ -19,7 +19,7 @@ const Navbar = () => {
 
                 <div className="space-x-8 hidden md:flex">
                     {NavbarArrayRight.map((item: NavbarType, index: number) => (
-                        <Link className="hover:text-slate-300 duration-150" href={item.href}>{item.label}</Link>
+                        <Link key={index+3} className="hover:text-slate-300 duration-150" href={item.href}>{item.label}</Link>
                     ))}
                 </div>
                 
